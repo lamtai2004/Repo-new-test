@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Prim And Dijkstra</title>
+    <link rel="icon" href="algorithm.png" type="img/x-icon">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <!-- Begin Header -->
+    <div id="header">
+        <p class="head1">MINH HOẠ TRỰC QUAN VÀ DEMO ỨNG DỤNG</p>
+        <p class="head1">THUẬT TOÁN PRIM VÀ THUẬT TOÁN DIJKSTRA</p>
+    </div>
+    <!-- End Header -->
+
+    <!-- Begin Container -->
+    <div id="container">
+        <div class="selection">
+            <div class="nhapdulieu" style="font-size: 2vw;">Nhập dữ liệu:</div>
+            <div class="nhapdulieu">Điểm xuất phát: <input id="diemdi" class="nhap" type="text" name="departure"></div>
+            <button class="run" onclick="Prim(Graph)">RUN (Prim)</button>
+            <button class="dijkstra" onclick="Dijkstra(Graph)">RUN (Dijkstra)</button>
+            <button class="reset" onclick="drawGraph()">RESET</button>
+        </div>
+        
+        <div class="bando">
+            <img src="https://kynn274.github.io/Prim.github.io/assets/img/map.jpg" alt="">
+            <div class="edge">
+                <canvas id="mycanvas01" width="1200" height="600"></canvas>
+                <canvas id="mycanvas02" width="1200" height="600"></canvas>
+                <canvas id="mycanvas04" width="1200" height="600"></canvas>
+                <canvas id="mycanvas12" width="1200" height="600"></canvas>
+                <canvas id="mycanvas24" width="1200" height="600"></canvas>
+                <canvas id="mycanvas25" width="1200" height="600"></canvas>
+                <canvas id="mycanvas26" width="1200" height="600"></canvas>
+                <canvas id="mycanvas67" width="1200" height="600"></canvas>
+                <canvas id="mycanvas56" width="1200" height="600"></canvas>
+                <canvas id="mycanvas57" width="1200" height="600"></canvas>
+                <canvas id="mycanvas13" width="1200" height="600"></canvas>
+                <canvas id="mycanvas34" width="1200" height="600"></canvas>
+                <canvas id="mycanvas45" width="1200" height="600"></canvas>
+                <canvas id="mycanvas46" width="1200" height="600"></canvas>
+                <canvas id="mycanvas47" width="1200" height="600"></canvas>
+                <canvas id="mypoint0" width="50" height="50"></canvas>
+                <canvas id="mypoint1" width="50" height="50"></canvas>
+                <canvas id="mypoint2" width="50" height="50"></canvas>
+                <canvas id="mypoint3" width="50" height="50"></canvas>
+                <canvas id="mypoint4" width="50" height="50"></canvas>
+                <canvas id="mypoint5" width="50" height="50"></canvas>
+                <canvas id="mypoint6" width="50" height="50"></canvas>
+                <canvas id="mypoint7" width="50" height="50"></canvas>
+                <canvas id="edge01" width="50" height="50"></canvas>
+                <canvas id="edge02" width="50" height="50"></canvas>
+                <canvas id="edge04" width="50" height="50"></canvas>
+                <canvas id="edge12" width="50" height="50"></canvas>
+                <canvas id="edge13" width="50" height="50"></canvas>
+                <canvas id="edge24" width="50" height="50"></canvas>
+                <canvas id="edge25" width="50" height="50"></canvas>
+                <canvas id="edge26" width="50" height="50"></canvas>
+                <canvas id="edge34" width="50" height="50"></canvas>
+                <canvas id="edge45" width="50" height="50"></canvas>
+                <canvas id="edge46" width="50" height="50"></canvas>
+                <canvas id="edge47" width="50" height="50"></canvas>
+                <canvas id="edge56" width="50" height="50"></canvas>
+                <canvas id="edge57" width="50" height="50"></canvas>
+                <canvas id="edge67" width="50" height="50"></canvas>
+            </div>
+        </div>
+    </div>
+    <!-- End Container -->
+
+    <!-- Begin Footer -->
+    <div id="footer">
+    </div>
+    <!-- End Footer -->
+
+    <script src="main.js"></script>
+</body>
+
+</html>

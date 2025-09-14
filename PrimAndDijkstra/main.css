@@ -1,0 +1,138 @@
+:root {
+    --height-: 3vw;
+    --selection-width-: 16vw;
+    background-color: black;
+    --screen-width: 100vw;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    height: calc(2*var(--height-));
+    position: static;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    border-bottom: 1vh solid rgb(255, 60, 0);
+}
+
+#header .head1 {
+    font-size: 1.5vw;
+    color: white;
+    line-height: var(--height-);
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#container {
+    position: relative;
+    margin-top: --height-;
+    background-color: rgba(227, 227, 227, 0.549);
+    display: block;
+    height: 42vw;
+}
+
+#container .selection {
+    position: absolute;
+    background-color: rgb(53, 53, 53);
+    bottom: 0;
+    top: 0;
+    padding: 20px 10px;
+    width: 16vw;
+    border-right: 1px solid rgb(255, 255, 255);
+    font-size: 1.5vw;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#container .selection .nhapdulieu {
+    padding: 8px;
+}
+
+#container .selection .nhap {
+    width: 2vw;
+    height: 1.5vw;
+    right: 0;
+}
+
+#container button {
+    font-size: 1.5vw;
+    background-color: rgb(199, 199, 199);
+    border-radius: 5px;
+    border: 4px 4px rgb(0, 0, 0);
+    width: 8vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#container .run {
+    top: 9vw;
+}
+
+#container .dijkstra {
+    top: 12vw; 
+}
+
+#container .reset {
+    top: 16vw; 
+}
+
+#container button:hover {
+    color: #fff;
+    background-color: #333;
+}
+
+#container .bando {
+    position: absolute;
+    right: 0;
+    top: 1vh;
+    width: 82vw;
+    height: 41vw;
+    background-image: url('https://i.pinimg.com/736x/18/7b/78/187b78f06a7e4fe6cf7c855c15eeba78.jpg');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+}
+
+#container img {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 41vw;
+}
+
+#container .bando .edge {
+    display: relative;
+    width: 82vw;
+    height: 41vw;
+}
+
+#container .bando .edge > canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#container .dinhvi {
+    color: rgb(255, 0, 0);
+    position: absolute;
+    font-size: 2vw;
+    left: 5vw;
+    display: block;
+    font-weight: 200;
+    background-color: #000000;
+}
+
+#container .bando .edge .length {
+    background-color: rgb(0, 0, 0);
+    font-weight: 300;
+    color: #ff0000;
+}
